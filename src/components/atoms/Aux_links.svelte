@@ -4,7 +4,6 @@
 	export let name;
 	export let url;
 	export let src;
-	// console.log(src);
 
 	function closeNav() {
 		if ($toggler) {
@@ -14,7 +13,7 @@
 </script>
 
 <a href={url} class="group block" on:click={closeNav}>
-	<div class=" flex flex-col items-center bg-black/5 rounded-xl h-32 relative">
+	<div class=" flex flex-col items-center bg-black/5 rounded-xl h-36 relative">
 		<img {src} alt={name} class="w-32 absolute -top-12" />
 
 		<div class="flex items-center flex-col h-full justify-end pb-4">

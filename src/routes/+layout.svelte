@@ -3,6 +3,7 @@
 	import Navbar from '../components/molecules/Navbar.svelte';
 </script>
 
-<Navbar />
-
-<slot />
+<main class="relative">
+	<Navbar />
+	<slot />
+</main>

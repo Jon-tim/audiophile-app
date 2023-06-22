@@ -13,7 +13,7 @@
 	}
 </script>
 
-<nav class="bg-dark px-6 py-8 relative">
+<nav class="bg-dark px-6 py-8 absolute top-0 left-0 w-full lative z-20">
 	<Mobile />
 	<section class=" max-w-5xl mx-auto flex items-center justify-between">
 		<!--hamburger/close menu svg -->
