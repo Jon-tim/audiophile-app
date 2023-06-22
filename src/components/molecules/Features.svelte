@@ -1,5 +1,6 @@
 <script>
 	import Button from '../atoms/Button.svelte';
+	import BestGear from './BestGear.svelte';
 </script>
 
 <section class="px-6 pb-8 flex flex-col gap-6">
@@ -30,7 +31,7 @@
 		<h1 class="uppercase font-semibold text-3xl">zx7 speaker</h1>
 		<Button bgcolor="transparent" textcolor="dark" fn={null} border="dark">see product</Button>
 	</div>
-	<div class=" flex flex-col gap-6">
+	<div class=" flex flex-col gap-6 mb-20">
 		<div class="card h-[200px]">
 			<picture>
 				<source
@@ -50,6 +51,7 @@
 			<Button bgcolor="transparent" textcolor="dark" fn={null} border="dark">see product</Button>
 		</div>
 	</div>
+	<BestGear />
 </section>
 
 <style lang="postcss">
