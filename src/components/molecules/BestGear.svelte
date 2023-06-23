@@ -1,5 +1,5 @@
-<section class="flex flex-col items-center gap-8">
-	<div class="card">
+<section class="flex flex-col items-center gap-8 lg:flex-row-reverse lg:mb-16">
+	<div class="card lg:w-1/2">
 		<picture>
 			<source
 				media="(min-width: 1024px)"
@@ -18,7 +18,7 @@
 			/>
 		</picture>
 	</div>
-	<div class="text-center flex flex-col items-center gap-8 max-w-xl">
+	<div class="text-center flex flex-col items-center gap-8 max-w-xl lg:items-start lg:text-start lg:w-1/2 lg:pr-11">
 		<h1 class="uppercase font-semibold text-3xl md:w-11/12 md:text-4xl">
 			bringing you the <span class="text-browns">best </span>audio gear
 		</h1>
