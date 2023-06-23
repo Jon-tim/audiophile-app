@@ -25,7 +25,7 @@
 			lovers and sound specialists who are devoted to helping you get the most out of personal
 			audio. Come and visit our demo facility - we’re open 7 days a week.
 		</p>
-		<div class="w-full flex items-center gap-6 md:justify-start ">
+		<div class="w-full flex items-center justify-center gap-6 md:justify-start">
 			<div>
 				<svg width="24" height="20" xmlns="http://www.w3.org/2000/svg"
 					><path

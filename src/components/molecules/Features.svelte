@@ -4,7 +4,9 @@
 </script>
 
 <section class="px-6 pb-8 flex flex-col gap-6 md:px-10">
-	<div class="bg-browns big card flex flex-col gap-14 px-6 py-16 items-center justify-between md:gap-20">
+	<div
+		class="bg-browns big card flex flex-col gap-14 px-6 py-16 items-center justify-between md:gap-20"
+	>
 		<div class="w-[65%] md:w-1/3">
 			<picture class="">
 				<source

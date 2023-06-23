@@ -1,8 +1,4 @@
 <script>
-	//bg-color
-	//text-color
-	//fn
-
 	export let bgcolor;
 	export let textcolor;
 	export let fn;

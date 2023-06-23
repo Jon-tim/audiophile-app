@@ -7,10 +7,10 @@
 </script>
 
 <section
-	class={`absolute top-full left-0 bg-white w-full overflow-y-hidden z-50 py-10 ${
+	class={`absolute top-full left-0 bg-white w-full overflow-yhidden z-50 py-10 ${
 		$toggler ? '' : '-translate-x-full'
-	} transition-transform duration-300 ease-linear`}
+	} transition-transform duration-300 ease-linear h-scree`}
 >
 	<AuxLinkHolder />
-	<!-- <div class="overlay" /> -->
+	<div class="overlay overflow-hidden w-screen h-screen bg-white" />
 </section>
