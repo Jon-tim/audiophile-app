@@ -12,7 +12,7 @@
 	}
 </script>
 
-<a href={url} class="group block" on:click={closeNav}>
+<a href={url} class="group block w-full" on:click={closeNav}>
 	<div class=" flex flex-col items-center bg-black/5 rounded-xl h-36 relative">
 		<img {src} alt={name} class="w-32 absolute -top-12" />
 

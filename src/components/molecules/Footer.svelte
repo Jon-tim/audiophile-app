@@ -4,12 +4,12 @@
 	let year = new Date().getFullYear();
 </script>
 
-<footer class="bg-dark flex flex-col gap-10 pb-8 px-6">
-	<div class="flex flex-col items-center gap-10">
+<footer class="bg-dark flex flex-col gap-10 pb-8 px-6 md:px-10">
+	<div class="flex flex-col items-center gap-8 md:items-start">
 		<div class="pt-10 logo relative">
 			<Logo />
 		</div>
-		<ul class="flex flex-col items-center gap-4">
+		<ul class="flex flex-col items-center gap-4 md:flex-row">
 			{#each nav_links as link (link.id)}
 				<li
 					class="cursor-pointer hover:text-browns transition-all duration-200 ease-linear text-white uppercase text-sm font-semibold"
@@ -20,12 +20,12 @@
 		</ul>
 	</div>
 	<div class=" flex flex-col items-center gap-10">
-		<p class="text-white/70 text-sm text-center">
+		<p class="text-white/70 text-sm text-center md:text-left">
 			Audiophile is an all in one stop to fulfill your audio needs. We're a small team of music
 			lovers and sound specialists who are devoted to helping you get the most out of personal
 			audio. Come and visit our demo facility - we’re open 7 days a week.
 		</p>
-		<div class="flex items-center gap-6">
+		<div class="w-full flex items-center gap-6 md:justify-start ">
 			<div>
 				<svg width="24" height="20" xmlns="http://www.w3.org/2000/svg"
 					><path

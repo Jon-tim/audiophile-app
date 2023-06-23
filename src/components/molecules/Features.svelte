@@ -3,9 +3,9 @@
 	import BestGear from './BestGear.svelte';
 </script>
 
-<section class="px-6 pb-8 flex flex-col gap-6">
-	<div class="bg-browns big card flex flex-col gap-14 px-6 py-16 items-center justify-between">
-		<div class="w-[65%]">
+<section class="px-6 pb-8 flex flex-col gap-6 md:px-10">
+	<div class="bg-browns big card flex flex-col gap-14 px-6 py-16 items-center justify-between md:gap-20">
+		<div class="w-[65%] md:w-1/3">
 			<picture class="">
 				<source
 					media="(min-width: 1024px)"
@@ -19,21 +19,21 @@
 				<img src="/src/public/assets/home/mobile/image-speaker-zx9.png" alt="" class="w-full" />
 			</picture>
 		</div>
-		<div class="flex flex-col gap-8 items-center text-center">
-			<h1 class="uppercase text-white font-semibold text-5xl">zx9 speaker</h1>
+		<div class="flex flex-col gap-8 items-center text-center md:w-3/5">
+			<h1 class="uppercase text-white font-semibold text-5xl md:text-6xl">zx9 speaker</h1>
 			<p class="text-white">
 				Upgrade to premium speakers that are phenomenally built to deliver truly remarkable sound.
 			</p>
 			<Button bgcolor="dark" textcolor="white" fn={null} border="dark">see product</Button>
 		</div>
 	</div>
-	<div class="mid card h-[300px] flex flex-col gap-6 p-6 items-start justify-center">
-		<h1 class="uppercase font-semibold text-3xl">zx7 speaker</h1>
+	<div class="mid card h-[300px] flex flex-col gap-6 p-6 items-start justify-center md:px-14">
+		<h1 class="uppercase font-semibold text-3xl md:text-4xl">zx7 speaker</h1>
 		<Button bgcolor="transparent" textcolor="dark" fn={null} border="dark">see product</Button>
 	</div>
-	<div class=" flex flex-col gap-6 mb-20">
-		<div class="card h-[200px]">
-			<picture>
+	<div class=" flex flex-col gap-6 mb-20 md:flex-row">
+		<div class="card h-[200px] md:h-[300px] md:w-1/2">
+			<picture class="w-full object-cover">
 				<source
 					media="(min-width: 1024px)"
 					class=""
@@ -43,11 +43,17 @@
 					media="(min-width: 768px)"
 					srcset="/src/public/assets/home/tablet/image-earphones-yx1.jpg"
 				/>
-				<img src="/src/public/assets/home/mobile/image-earphones-yx1.jpg" alt="" class="" />
+				<img
+					src="/src/public/assets/home/mobile/image-earphones-yx1.jpg"
+					alt=""
+					class="w-full object-cover"
+				/>
 			</picture>
 		</div>
-		<div class="card bg-black/5 p-6 h-[200px] flex flex-col items-start justify-center gap-6">
-			<h1 class="uppercase font-semibold text-3xl">yx1 earphones</h1>
+		<div
+			class="card bg-black/5 p-6 h-[200px] flex flex-col items-start justify-center gap-6 md:h-[300px] md:w-1/2"
+		>
+			<h1 class="uppercase font-semibold text-3xl md:text-4xl">yx1 earphones</h1>
 			<Button bgcolor="transparent" textcolor="dark" fn={null} border="dark">see product</Button>
 		</div>
 	</div>
@@ -69,5 +75,14 @@
 		background-repeat: no-repeat;
 		background-size: 200%;
 		background-position: center -120px;
+	}
+
+	@media screen and (min-width: 768px) {
+		.mid {
+			background-image: url('/src/public/assets/home/tablet/image-speaker-zx7.jpg');
+		}
+
+		.big {
+		}
 	}
 </style>

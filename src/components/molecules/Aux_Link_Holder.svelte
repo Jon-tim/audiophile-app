@@ -4,7 +4,7 @@
 	let navs = nav_links.slice(1);
 </script>
 
-<div class="p-6 h-full flex flex-col gap-20">
+<div class="p-6 w-full h-full flex flex-col items-center gap-20 md:flex-row md:px-10 md:gap-2">
 	{#each navs as nav (nav.id)}
 		<AuxLinks url={nav.url} src={nav.src} name={nav.name} />
 	{/each}

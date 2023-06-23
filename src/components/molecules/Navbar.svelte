@@ -13,9 +13,11 @@
 	}
 </script>
 
-<nav class="bg-dark px-6 py-8 absolute top-0 left-0 w-full lative z-20">
+<nav class="bg-dark px-6 w-full relative z-20 border-b-[1px] border-white/20 md:border-none">
 	<Mobile />
-	<section class=" max-w-5xl mx-auto flex items-center justify-between">
+	<section
+		class=" max-w-5xl mx-auto flex items-center justify-between py-8 md:border-b-[1px] border-white/20"
+	>
 		<!--hamburger/close menu svg -->
 		<svg
 			fill="#FFF"
