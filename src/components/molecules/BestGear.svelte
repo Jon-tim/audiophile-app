@@ -1,4 +1,4 @@
-<section class="flex flex-col items-center gap-8 lg:flex-row-reverse lg:mb-16">
+<section class="px-6 pb-14 md:px-10 lg:px-0 flex flex-col items-center gap-8 lg:flex-row-reverse lg:mb-16">
 	<div class="card lg:w-1/2">
 		<picture>
 			<source
