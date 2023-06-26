@@ -27,7 +27,12 @@
 				{/if}
 				<h1 class="uppercase font-semibold text-3xl md:text-4xl lg:w-2/3">{product.name}</h1>
 				<p>{product.description}</p>
-				<Button bgcolor="browns" textcolor="white" fn={null} border="browns">see product</Button>
+				<Button
+					bgcolor="browns"
+					textcolor="white"
+					fn={`${product.category}/${product.slug}`}
+					border="browns">see product</Button
+				>
 			</div>
 		</section>
 	{/each}
