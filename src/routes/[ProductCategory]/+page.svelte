@@ -1,10 +1,16 @@
 <script>
+	import { page } from '$app/stores';
 	import Button from '../../components/atoms/Button.svelte';
 	export let data;
 
 	$: products = data.products;
 </script>
 
+<div class="bg-dark py-8 md:py-12 lg:py-14">
+	<h1 class=" text-white uppercase font-bold text-2xl text-center">
+		{$page.params.ProductCategory}
+	</h1>
+</div>
 <section class="max-w-5xl mx-auto flex flex-col gap-10 lg:my-16">
 	{#each products as product, id (product.id)}
 		<section
