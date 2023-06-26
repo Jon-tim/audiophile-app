@@ -6,7 +6,7 @@ export default {
 			colors: {
 				browns: '#d87d4a',
 				dark: '#191919',
-				text: '#0000004d'
+				text: '#0000005d'
 			}
 		}
 	},
