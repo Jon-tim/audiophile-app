@@ -17,7 +17,7 @@
 				Experience natural, lifelike audio and exceptional build quality made for the passionate
 				music enthusiast.
 			</p>
-			<Button bgcolor="browns" border="browns" textcolor="white" fn={null}>see product</Button>
+			<Button bgcolor="browns" border="browns" textcolor="white" fn="/headphones/xx99-mark-two-headphones">see product</Button>
 		</div>
 	</div>
 	<section class=" col-start-1 row-start-1 h-full w-full">
