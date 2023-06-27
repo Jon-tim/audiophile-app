@@ -8,6 +8,9 @@ export default {
 				dark: '#191919',
 				text: '#0000005d'
 			}
+		},
+		screens: {
+			xs: '540px'
 		}
 	},
 	plugins: []
