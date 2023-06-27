@@ -91,6 +91,7 @@
 		"id": 2,
 		"slug": "xx59-headphones",
 		"name": "XX59 Headphones",
+		"shortName": "xx59",
 		"image": {
 			"mobile": "/src/public/assets/product-xx59-headphones/mobile/image-product.jpg",
 			"tablet": "/src/public/assets/product-xx59-headphones/tablet/image-product.jpg",
@@ -175,6 +176,7 @@
 		"id": 3,
 		"slug": "xx99-mark-one-headphones",
 		"name": "XX99 Mark I Headphones",
+		"shortName": "xx99 mark i",
 		"image": {
 			"mobile": "/src/public/assets/product-xx99-mark-one-headphones/mobile/image-product.jpg",
 			"tablet": "/src/public/assets/product-xx99-mark-one-headphones/tablet/image-product.jpg",
@@ -259,6 +261,7 @@
 		"id": 4,
 		"slug": "xx99-mark-two-headphones",
 		"name": "XX99 Mark II Headphones",
+		"shortName": "xx99 mark ii",
 		"image": {
 			"mobile": "/src/public/assets/product-xx99-mark-two-headphones/mobile/image-product.jpg",
 			"tablet": "/src/public/assets/product-xx99-mark-two-headphones/tablet/image-product.jpg",
@@ -347,6 +350,7 @@
 		"id": 5,
 		"slug": "zx7-speaker",
 		"name": "ZX7 Speaker",
+		"shortName": "zx7",
 		"image": {
 			"mobile": "/src/public/assets/product-zx7-speaker/mobile/image-product.jpg",
 			"tablet": "/src/public/assets/product-zx7-speaker/tablet/image-product.jpg",
@@ -435,6 +439,7 @@
 		"id": 6,
 		"slug": "zx9-speaker",
 		"name": "ZX9 Speaker",
+		"shortName": "zx9",
 		"image": {
 			"mobile": "/src/public/assets/product-zx9-speaker/mobile/image-product.jpg",
 			"tablet": "/src/public/assets/product-zx9-speaker/tablet/image-product.jpg",
