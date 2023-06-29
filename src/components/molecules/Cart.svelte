@@ -1,10 +1,15 @@
 <script>
 	import { cart } from '../../store/carts';
 	import Counter from '../atoms/Counter.svelte';
-
+	import { modalOpen, modalToggle } from '../../store/cartModalStore';
 	let disable = $cart.length ? '' : 'opacity-30';
 
-	console.log($cart);
+	// console.log($cart);
+	function closeModal() {
+		if (modalOpen) {
+			modalToggle();
+		}
+	}
 </script>
 
 <section class="flex flex-col gap-6">
@@ -40,15 +45,19 @@
 				</section>
 				<section class="flex items-center justify-between w-full">
 					<p class="uppercase">total</p>
-					<p class="font-bold text-lg text-dark">$ {$cart.totalAmount.toLocaleString('en-US', {
+					<p class="font-bold text-lg text-dark">
+						$ {$cart.totalAmount.toLocaleString('en-US', {
 							minimumFractionDigits: 2,
 							maximumFractionDigits: 2
-						})}</p>
+						})}
+					</p>
 				</section>
-				<button
+				<a
+					on:click={closeModal}
+					href="/checkout"
 					class="bg-browns text-white text-center uppercase font-bold w-full py-4 hover:opacity-80"
-					>checkout</button
-				>
+					>checkout
+				</a>
 			</section>
 		{:else}
 			<p class="font-semibold">You have an empty cart! 💀</p>
