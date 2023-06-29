@@ -1,24 +1,41 @@
 <script>
 	export let data;
+	// IMPORTS---------------
 	import { page } from '$app/stores';
 	import { each } from 'svelte/internal';
 	import Others from '../../../components/atoms/Others.svelte';
-
+	import { cart } from '../../../store/carts';
+	import Counter from '../../../components/atoms/Counter.svelte';
+	// IMPORTS---------------
+	// let productQuantity = $quantity;
 	$: single = data.single;
 	let quantity = 1;
+
+	//controls
+	const increase = () => {
+		quantity += 1;
+	};
+	const decrease = () => {
+		return quantity > 1 ? (quantity -= 1) : 1;
+	};
 </script>
 
 <section class="">
 	<section class="flex flex-col gap-20 md:mb-12">
 		{#each single as item}
 			<div class="flex flex-col gap-8 xs:flex-row sm:items-center lg:gap-12">
-				<div class="rounded-xl overflow-hidden xs:w-1/3 md:w-2/5  lg:w-1/2">
+				<div class="rounded-xl overflow-hidden xs:w-1/3 md:w-2/5 lg:w-1/2">
 					<picture>
 						<source srcset={item.image.desktop} media="(min-width: 1024px)" />
 						<source srcset={item.image.tablet} media="(min-width: 540px)" />
-						<img class="w-full h-full object-cover" src={item.image.mobile} alt={`image of ${item.name}`} />
+						<img
+							class="w-full h-full object-cover"
+							src={item.image.mobile}
+							alt={`image of ${item.name}`}
+						/>
 					</picture>
 				</div>
+				<!-- details and quantity control -->
 				<div class="flex flex-col gap-4 xs:w-2/3 md:w-3/5 lg:w-1/2">
 					{#if item.new}
 						<p class="uppercase text-browns tracking-[.5rem] text-sm">new product</p>
@@ -32,24 +49,18 @@
 						})}`}
 					</p>
 					<div class="flex items-center gap-6 flex-wrap">
-						<div class="bg-black/5 w-max h-[48px] flex items-center">
-							<span
-								class="px-6 h-full flex items-center justify-center cursor-pointer text-xl font-bold text-text hover:text-white hover:bg-browns transition-all duration-200"
-								>+</span
-							>
-							<span
-								class="border-x-2 h-full flex items-center justify-center w-12 font-semibold text-text"
-								>{quantity}</span
-							>
-							<span
-								class="px-6 h-full flex items-center justify-center cursor-pointer text-xl font-bold text-text hover:text-white hover:bg-browns transition-all duration-200"
-								>-</span
-							>
+						<div class="h-[48px]">
+							<Counter {quantity} {increase} {decrease} />
 						</div>
-						<button class="px-6 py-3 bg-browns text-white font-bold uppercase">add to cart</button>
+						<button
+							on:click={() =>
+								cart.addToCart(item.id, item.shortName, item.price, quantity, item.image.mobile)}
+							class="px-6 py-3 bg-browns text-white font-bold uppercase">add to cart</button
+						>
 					</div>
 				</div>
 			</div>
+			<!-- features -->
 			<div class="flex flex-col gap-10 lg:flex-row lg:justify-between">
 				<div class="lg:w-2/3">
 					<h1 class="text-2xl uppercase font-bold mb-4">features</h1>

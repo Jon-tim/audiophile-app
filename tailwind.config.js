@@ -7,10 +7,10 @@ export default {
 				browns: '#d87d4a',
 				dark: '#191919',
 				text: '#0000005d'
+			},
+			screens: {
+				xs: '540px'
 			}
-		},
-		screens: {
-			xs: '540px'
 		}
 	},
 	plugins: []

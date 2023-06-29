@@ -10,7 +10,7 @@
 			<p class="uppercase text-white/50 text-xs font-semibold tracking-[.7rem] md:text-base">
 				new product
 			</p>
-			<h1 class="uppercase text-[2.5rem] text-white font-extrabold md:text-6xl lg:text-7xl">
+			<h1 class="uppercase text-[2.5rem] text-white font-extrabold md:text-6xl">
 				xx99 mark ii headphone
 			</h1>
 			<p class="text-white/80 mb-6 text-base w-[85%] md:mb-3 lg:w-[380px]">
