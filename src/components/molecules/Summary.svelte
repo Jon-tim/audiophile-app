@@ -1,7 +1,8 @@
 <script>
 	import { cart } from '../../store/carts';
 	import CardCheckout from '../atoms/Card_checkout.svelte';
-
+	import SummaryFigures from '../templates/SummaryFigures.svelte';
+	//imports------------------------------------------------
 	let shippingFee = 50;
 	$: VAT = 0.2 * $cart.totalAmount;
 </script>
@@ -29,35 +30,5 @@
 			<p class="text-center font-semibold">You have an empty cart! 💀</p>
 		{/if}
 	</div>
-	<div class="flex flex-col gap-2">
-		<div class="flex items-center justify-between">
-			<p class="uppercase">total</p>
-			<p class="font-bold text-lg text-dark">
-				$ {$cart.totalAmount.toLocaleString('en-US')}
-			</p>
-		</div>
-		<div class="flex items-center justify-between">
-			<p class="uppercase">shipping</p>
-			<p class="font-bold text-lg text-dark">$ {shippingFee}</p>
-		</div>
-		<div class="flex items-center justify-between">
-			<p class="uppercase">vat (included)</p>
-			<p class="font-bold text-lg text-dark">
-				$ {VAT.toLocaleString('en-US')}
-			</p>
-		</div>
-		<div class="flex items-center justify-between">
-			<p class="uppercase">grand total</p>
-			<p class="font-bold text-lg text-browns">
-				$ {(shippingFee + VAT + $cart.totalAmount).toLocaleString('en-US')}
-			</p>
-		</div>
-	</div>
-	<div class="mt-3">
-		<button
-			disabled={$cart.totalQuantity ? false : true}
-			class="block bg-browns text-white text-center uppercase font-bold w-full py-4 hover:opacity-80 disabled:opacity-40 disabled:cursor-not-allowed"
-			>continue & pay
-		</button>
-	</div>
+	<SummaryFigures />
 </CardCheckout>
