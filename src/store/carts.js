@@ -1,14 +1,14 @@
-import { writable } from 'svelte/store';
+import { writable, derived } from 'svelte/store';
 
 const initialState = {
 	items: [],
 	totalQuantity: 0,
-	totalAmount: 0
+	totalAmount: 0,
+	shippingFee: 50
 };
 
 function createCart() {
 	const { subscribe, update } = writable(initialState);
-
 	return {
 		subscribe,
 		addToCart: (id, name, price, quantity, img) => {
@@ -22,7 +22,6 @@ function createCart() {
 				}
 				state.totalQuantity += quantity;
 				state.totalAmount += price * quantity;
-				// console.log(items);
 				return state;
 			});
 		},
@@ -59,5 +58,9 @@ function createCart() {
 		}
 	};
 }
-
 export const cart = createCart();
+
+export const calcVAT = derived(cart, ($cart) => {
+	const { totalAmount } = $cart;
+	return 0.2 * totalAmount;
+});

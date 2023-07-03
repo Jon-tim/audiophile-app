@@ -9,4 +9,7 @@
 	p {
 		@apply text-text;
 	}
+	.error-border {
+		border: 1px solid red;
+	}
 }

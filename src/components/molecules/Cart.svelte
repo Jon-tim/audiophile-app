@@ -4,7 +4,6 @@
 	import { modalOpen, modalToggle } from '../../store/cartModalStore';
 	let disable = $cart.length ? '' : 'opacity-30';
 
-	// console.log($cart);
 	function closeModal() {
 		if (modalOpen) {
 			modalToggle();

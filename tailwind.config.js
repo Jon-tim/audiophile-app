@@ -9,7 +9,8 @@ export default {
 				text: '#0000005d'
 			},
 			screens: {
-				xs: '540px'
+				xs: '540px',
+				xxs: '620px'
 			}
 		}
 	},
