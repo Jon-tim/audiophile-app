@@ -17,6 +17,7 @@
 		details={($cart.shippingFee + VAT + $cart.totalAmount).toLocaleString('en-US')}
 	/>
 </div>
+
 <div class="mt-3">
 	<button
 		on:click={() => confirmToggle()}

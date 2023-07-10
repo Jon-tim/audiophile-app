@@ -17,11 +17,11 @@
 </script>
 
 <nav
-	class="bg-dark px-6 md:px-10 lg:px-0 relative w-full top-0 z-20 border-b-[1px] border-white/20 md:border-none"
+	class="bg-dark px-6 md:px-10 lg:px-0 relativ sticky w-full top-0 z-20 border-b-[1px] border-white/20 md:border-none"
 >
 	<Mobile />
 	<section
-		class=" max-w-5xl mx-auto flex items-center justify-between py-8 md:border-b-[1px] border-white/20"
+		class=" max-w-5xl mx-auto flex items-center justify-between py-8 md:border-b-[1px] border-white/20 "
 	>
 		<!--hamburger/close menu svg -->
 		<svg
@@ -39,9 +39,7 @@
 		<Logo />
 		<DesktopNavLinks />
 		<!-- cart svg -->
-		{#if $modalOpen}
-			<CartModal />
-		{/if}
+	
 		<div class="w-max cursor-pointer group relative">
 			<svg
 				width="23"

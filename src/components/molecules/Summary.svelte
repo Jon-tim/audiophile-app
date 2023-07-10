@@ -3,7 +3,6 @@
 	import CardCheckout from '../atoms/Card_checkout.svelte';
 	import SummaryFigures from '../templates/SummaryFigures.svelte';
 	//imports------------------------------------------------
-	let shippingFee = 50;
 	$: VAT = 0.2 * $cart.totalAmount;
 </script>
 
