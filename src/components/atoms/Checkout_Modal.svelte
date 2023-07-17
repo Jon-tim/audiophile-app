@@ -1,5 +1,6 @@
 <script>
-	import { shipping } from '../../data/Form_info';
+	// import { shipping } from '../../data/Form_info';
+	import {shipping} from "../../data/Form_info";
 	import { cart, calcVAT } from '../../store/carts';
 	import { confirm, confirmToggle } from '../../store/checkoutModalToggler';
 

@@ -17,7 +17,12 @@
 				Experience natural, lifelike audio and exceptional build quality made for the passionate
 				music enthusiast.
 			</p>
-			<Button bgcolor="browns" border="browns" textcolor="white" fn="/headphones/xx99-mark-two-headphones">see product</Button>
+			<Button
+				bgcolor="browns"
+				border="browns"
+				textcolor="white"
+				fn="/headphones/xx99-mark-two-headphones">see product</Button
+			>
 		</div>
 	</div>
 	<section class=" col-start-1 row-start-1 h-full w-full">
@@ -25,11 +30,11 @@
 			<source
 				media="(min-width: 1024px)"
 				class=""
-				srcset="/src/public/assets/home/desktop/image-hero.jpg"
+				srcset="public/assets/home/desktop/image-hero.jpg"
 			/>
-			<source media="(min-width: 768px)" srcset="/src/public/assets/home/tablet/image-header.jpg" />
+			<source media="(min-width: 768px)" srcset="public/assets/home/tablet/image-header.jpg" />
 
-			<img src="/src/public/assets/home/mobile/image-header.jpg" alt="" class="w-full" />
+			<img src="public/assets/home/mobile/image-header.jpg" alt="" class="w-full" />
 		</picture>
 	</section>
 </section>

@@ -4,15 +4,15 @@
 			<source
 				media="(min-width: 1024px)"
 				class=""
-				srcset="/src/public/assets/shared/desktop/image-best-gear.jpg"
+				srcset="/public/assets/shared/desktop/image-best-gear.jpg"
 			/>
 			<source
 				media="(min-width: 768px)"
 				class=""
-				srcset="/src/public/assets/shared/tablet/image-best-gear.jpg"
+				srcset="/public/assets/shared/tablet/image-best-gear.jpg"
 			/>
 			<img
-				src="/src/public/assets/shared/mobile/image-best-gear.jpg"
+				src="/public/assets/shared/mobile/image-best-gear.jpg"
 				class="w-full"
 				alt="man with a headset put on"
 			/>
