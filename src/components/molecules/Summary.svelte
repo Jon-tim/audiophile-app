@@ -1,4 +1,5 @@
 <script>
+
 	import { cart } from '../../store/carts';
 	import CardCheckout from '../atoms/Card_checkout.svelte';
 	import SummaryFigures from '../templates/SummaryFigures.svelte';
@@ -30,6 +31,6 @@
 				<p class="text-center font-semibold">You have an empty cart! 💀</p>
 			{/if}
 		</div>
-		<SummaryFigures />
+		<SummaryFigures/>
 	</CardCheckout>
 </section>

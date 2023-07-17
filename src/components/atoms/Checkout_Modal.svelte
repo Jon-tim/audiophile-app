@@ -1,5 +1,4 @@
 <script>
-	import {shipping} from "../../data/Form_info";
 	import { cart, calcVAT } from '../../store/carts';
 	import { confirm, confirmToggle } from '../../store/checkoutModalToggler';
 
@@ -12,7 +11,7 @@
 </script>
 
 <section
-	class="absolute top-0 left-0 w-full h-screen z-50 overflow-hidden flex items-center justify-center"
+	class="fixed top-0 left-0 right-0 bottom-0 w-full h-screen z-50 overflow-hidden flex items-center justify-center"
 >
 	<div class="absolute bg-black/50 w-full h-full" />
 	<div

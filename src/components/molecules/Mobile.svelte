@@ -11,5 +11,4 @@
 	} transition-transform duration-300 ease-linear lg:hidden `}
 >
 	<AuxLinkHolder />
-	<!-- <div class="overlay bg-white" /> -->
 </section>

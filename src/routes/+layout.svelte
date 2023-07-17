@@ -9,12 +9,12 @@
 </script>
 
 <main class="relative">
-	{#if $modalOpen}
+	<!-- {#if $modalOpen}
 		<CartModal />
-	{/if}
-	{#if $confirm}
+	{/if} -->
+	<!-- {#if $confirm}
 		<CheckoutModal />
-	{/if}
+	{/if} -->
 	<Navbar />
 	<slot />
 	<Footer />
