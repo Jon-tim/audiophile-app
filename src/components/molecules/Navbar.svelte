@@ -17,7 +17,7 @@
 </script>
 
 <nav
-	class="bg-dark px-6 md:px-10 lg:px-0 relativ sticky w-full top-0 z-20 border-b-[1px] border-white/20 md:border-none"
+	class="bg-dark px-6 md:px-10 lg:px-0 sticky w-full top-0 z-20 border-b-[1px] border-white/20 md:border-none"
 >
 	<Mobile />
 	<section

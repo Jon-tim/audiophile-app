@@ -5,7 +5,7 @@
 </script>
 
 <div
-	class="py-6 px-6 w-full h-full flex flex-col items-center gap-20 md:flex-row md:gap-2 md:px-8 lg:px-0 lg:gap-6"
+	class="py-6 px-6 w-full h-max flex flex-col items-center gap-20 md:flex-row md:gap-2 md:px-8 lg:px-0 lg:gap-6"
 >
 	{#each navs as nav (nav.id)}
 		<AuxLinks url={nav.url} src={nav.src} name={nav.name} />

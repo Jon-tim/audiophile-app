@@ -6,10 +6,10 @@
 </script>
 
 <section
-	class={`absolute top-full left-0 bg-white w-full z-50 py-10 h-screen overflow-hidden  ${
+	class={`absolute top-full left-0 bg-white w-full z-50 py-10 pb-24 h-screen overflow-scroll  ${
 		$toggler ? '' : '-translate-x-full'
 	} transition-transform duration-300 ease-linear lg:hidden `}
 >
 	<AuxLinkHolder />
-	<!-- <div class="overlay overflow-hidden w-screen h-screen bg-white" /> -->
+	<!-- <div class="overlay bg-white" /> -->
 </section>
