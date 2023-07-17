@@ -19,8 +19,9 @@
 			</p>
 			<Button
 				bgcolor="browns"
-				border="browns"
+				borderColor="none"
 				textcolor="white"
+				borderSize="0"
 				fn="/headphones/xx99-mark-two-headphones">see product</Button
 			>
 		</div>

@@ -10,7 +10,7 @@
 	<title>Audiophile | Checkout</title>
 </svelte:head>
 
-<main class="relative flex flex-col gap-8 md:flex-row w-full max-w-5xl">
+<main class="relativ flex flex-col gap-8 md:flex-row w-full max-w-5xl">
 	<FormCheckout />
 	<Summary />
 </main>

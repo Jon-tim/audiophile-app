@@ -29,8 +29,12 @@
 				<p class="text-white">
 					Upgrade to premium speakers that are phenomenally built to deliver truly remarkable sound.
 				</p>
-				<Button bgcolor="dark" textcolor="white" fn="/speakers/zx9-speaker" border="dark"
-					>see product</Button
+				<Button
+					bgcolor="dark"
+					textcolor="white"
+					fn="/speakers/zx9-speaker"
+					borderSize="0"
+					borderColor="none">see product</Button
 				>
 			</div>
 		</div>
@@ -38,8 +42,12 @@
 			class="mid card h-[300px] flex flex-col gap-6 p-6 items-start justify-center md:px-14 lg:pl-16"
 		>
 			<h1 class="uppercase font-semibold text-3xl md:text-4xl">zx7 speaker</h1>
-			<Button bgcolor="transparent" textcolor="dark" fn="/speakers/zx7-speaker" border="dark"
-				>see product</Button
+			<Button
+				bgcolor="transparent"
+				borderColor="dark"
+				textcolor="dark"
+				fn="/speakers/zx7-speaker"
+				borderSize="2">see product</Button
 			>
 		</div>
 		<div class=" flex flex-col gap-6 md:flex-row lg:">
@@ -65,8 +73,12 @@
 				class="card bg-black/5 p-6 h-[200px] flex flex-col items-start justify-center gap-6 md:h-[300px] md:w-1/2 lg:pl-16"
 			>
 				<h1 class="uppercase font-semibold text-3xl md:text-4xl">yx1 earphones</h1>
-				<Button bgcolor="transparent" textcolor="dark" fn="/earphones/yx1-earphones" border="dark"
-					>see product</Button
+				<Button
+					bgcolor="transparent"
+					textcolor="dark"
+					fn="/earphones/yx1-earphones"
+					borderColor="dark"
+					borderSize="2">see product</Button
 				>
 			</div>
 		</div>
