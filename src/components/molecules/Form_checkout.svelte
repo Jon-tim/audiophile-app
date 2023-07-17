@@ -108,7 +108,7 @@
 						</div>
 					{:else}
 						<div class="COD flex items-center gap-8">
-							<img src="/src/public/assets/shared/desktop/icon-cash-on-delivery.svg" alt="" />
+							<img src="/public/assets/shared/desktop/icon-cash-on-delivery.svg" alt="" />
 							<p class="text-sm md:text-base">
 								The ‘Cash on Delivery’ option enables you to pay in cash when our delivery courier
 								arrives at your residence. Just make sure your address is correct so that your order

@@ -1,5 +1,4 @@
 <script>
-	// import { shipping } from '../../data/Form_info';
 	import {shipping} from "../../data/Form_info";
 	import { cart, calcVAT } from '../../store/carts';
 	import { confirm, confirmToggle } from '../../store/checkoutModalToggler';
@@ -19,7 +18,7 @@
 	<div
 		class="relative bg-white w-[90%] max-w-xl h-max rounded-xl p-8 flex flex-col gap-6 items-start"
 	>
-		<img src="/src/public/assets/shared/desktop/check-mark.svg" alt="checmark icon" />
+		<img src="/public/assets/shared/desktop/check-mark.svg" alt="checmark icon" />
 		<h1 class="uppercase text-4xl font-bold">
 			thank you <br class="hidden md:block" /> for your order
 		</h1>
